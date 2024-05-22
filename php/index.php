@@ -24,10 +24,10 @@ require_once("./src/close.php");
 <body>
     <?php include_once('./components/nav.php') ?>
     <!-- <pre><?= print_r($users) ?></pre> -->
-    <!-- <?php
+     <?php
         foreach ($users as $user) {
             echo $user['first_name'] . " " . $user['last_name'] . " - " . $user['email'] . "<br>";
         }
-    ?> -->
+    ?>
 </body>
 </html>
