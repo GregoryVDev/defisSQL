@@ -3,7 +3,7 @@ services:
         image: php:8.3-apache
         container_name: introsql_php8_3
         ports:
-            - "8001:80" # on définit le port pour accéder à l'application (localhost:8001)
+            - "8003:80" # on définit le port pour accéder à l'application (localhost:8001)
         volumes:
             - ./php:/var/www/html # on monte le dossier courant dans le dossier /var/www/html du container
         build:
@@ -32,4 +32,4 @@ services:
             PMA_PASSWORD: root
             UPLOAD_LIMIT: 20M
         ports:
-            - "8081:80" # on définit le port pour accéder à phpmyadmin (localhost:8081)
+            - "8083:80" # on définit le port pour accéder à phpmyadmin (localhost:8081)
